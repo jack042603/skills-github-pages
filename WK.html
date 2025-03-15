@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gay Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('5376788.jpg') no-repeat center center/cover;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.9); /* 添加透明白色背景，增强可读性 */
+            padding: 30px;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        header {
+            background: linear-gradient(90deg, #ff8c00, #ff0080);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            border-radius: 10px 10px 0 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        .section {
+            padding: 20px;
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        a {
+            color: #ff4500;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        a:hover {
+            color: #007BFF;
+        }
+
+        /* 动画效果 */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header>Self-Introduction</header>
+        
+        <div class="section">
+            <img src="C:\Users\kwfoo\Downloads\IMG_20220913_195459.jpg" alt="我的照片" class="profile-img">
+            <h2> 你好，我是 [Foo Wei Kang]</h2>
+            <p>我是一个热爱前端开发的人，喜欢创造美丽的网页！</p>
+        </div>
+        
+        <div class="section">
+            <h3>关于我</h3>
+            <p>我对编程充满热情，擅长 HTML、CSS 和 JavaScript ，HTML 5，PHP，Kali Linux，My SQL，XML</p>
+        </div>
+        
+        <div class="section">
+            <h3>作品展示</h3>
+            <p>这里是一些我做过的项目：</p>
+            <ul>
+                <li><a href="#">项目 1</a></li>
+                <li><a href="#">项目 2</a></li>
+                <li><a href="#">项目 3</a></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+        <h3>Discord Online </h3>
+        <iframe src="https://discord.com/widget?id=977972114156036186&theme=dark" 
+                width="350" height="500" allowtransparency="true" 
+                frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+        </iframe>
+    </div> 
+
+    <div class="section">
+        <h3>联系方式</h3>
+        <p>📧 Email：kw.foo456@gmail.com@gmail.com</p>
+        <p>🔗 <a href="https://drive.google.com/drive/folders/1Dsh2E8Ct1YMXDBuBRbGzbzKN3zpClqlC?usp=drive_link">My Portfolio</a> | <a href="https://drive.google.com/drive/folders/1LkywoH85Io9kflHTM-NRQFEYhhE2k7wc?usp=drive_link">Resume</a>
+    </div>
+
+
+        <footer>
+            &copy; 2025 Foo Wei Kang's Self-Introduction
+        </footer>
+    </div>
+</body>
+</html>
